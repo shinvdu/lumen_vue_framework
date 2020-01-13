@@ -20,7 +20,6 @@
 </template>
 <script>
   import {mapGetters} from 'vuex';
-  import {Utils} from '../../store/util'
   export default {
     data () {
       return {
@@ -58,7 +57,6 @@
       },
 
       checkRouter (newval, oldval) {
-        let newpath = newval.path;
         let oldpath = oldval.path;
         if (oldpath === '/home') {
           console.log('home here.')

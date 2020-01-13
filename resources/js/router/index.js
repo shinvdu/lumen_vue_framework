@@ -28,7 +28,6 @@ const home = require('../components/home/home.vue');
 
 const sms = require('../components/auth/sms.vue');
 
-
 export default new Router({
   // mode: 'history',
   routes: [

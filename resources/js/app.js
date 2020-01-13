@@ -6,7 +6,6 @@ import store from './store'
 import router from './router'
 import vue_resource from 'vue-resource'
 import parts from './parts'
-import {Utils} from './store/util'
 // import storageIndexedDB from './store/storageIndexedDB'
 // import storageWebSQL from './store/storageWebSQL'
 // import md5 from './store/md5'
@@ -25,7 +24,6 @@ const app = new Vue({
   router,
   ...App
 });
-
 
 Vue.http.options.timeout = 30000; // 超时设置需要大于env api超时时间
 
@@ -49,7 +47,7 @@ Vue.http.interceptors.push((request, next) => {
       }
     });
   } else {
-    // return false; 
+    // return false;
     next();
   }
 });
